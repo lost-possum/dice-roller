@@ -9,24 +9,13 @@ document.getElementById('submitButtonDice').onclick = function() {
     let diceModifierMultiply = Number(document.getElementById('diceModifierInputMultiply').value);
     let integerPattern = /^\d+$/;
 
-    if (isNaN(howManySides) || isNaN(howManyDice) || isNaN(diceModifierAddSubtract) || isNaN(diceModifierMultiply)) {
+    if (isNaN(howManySides) || isNaN(howManyDice) || isNaN(diceModifierAddSubtract) || isNaN(diceModifierMultiply) || howManySides < 0 || howManyDice < 0 || !integerPattern.test(howManySides) || !integerPattern.test(howManyDice) || !integerPattern.test(diceModifierAddSubtract) || !integerPattern.test(diceModifierMultiply)) {
         alert("Please enter a valid positive integer for all input fields.");
         return;
-    }
-
-    if (howManySides < 0 || howManyDice < 0) {
-        alert("Please enter a valid positive integer for all input fields.");
-        return;
-    }
-
-    if (!integerPattern.test(howManySides) || !integerPattern.test(howManyDice) || !integerPattern.test(diceModifierAddSubtract) || !integerPattern.test(diceModifierMultiply)) {
-        alert("Please enter a valid positive integer for all input fields.");
     }
 
     document.getElementById('diceResultIndividual').innerHTML = "Result (Individual Dice): ";
     totalDiceValue = 0;
-    let existingText = document.getElementById('diceResultIndividual').innerHTML;
-    document.getElementById('diceResultIndividual').innerHTML = existingText;
 
     for (let i = 1; i <= howManyDice; i += 1) {
         roll = Math.floor(Math.random() * howManySides) + 1;
