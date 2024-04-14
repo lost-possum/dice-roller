@@ -56,11 +56,3 @@ document.getElementById('resetInputFieldsDice').onclick = function() {
     document.getElementById('diceModifierInputAddSubtract').value = "";
     document.getElementById('diceModifierInputMultiply').value = "";
 }
-
-// add roll history
-// give the user customizable dice sets - different number sides and quantities in a single dice roll (6d6 + 8d12 etc)
-// modifier for each individual die 
-// save and load configurations
-// randomized sounds effects OR sound effect packs with selectable themes
-// a really stupid animation?
-// accessibility features

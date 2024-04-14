@@ -1,0 +1,31 @@
+add roll history
+
+give the user customizable dice sets - different number sides and quantities in a single dice roll (6d6 + 8d12 etc)
+
+modifier for each individual die 
+
+save and load configurations
+
+randomized sounds effects OR sound effect packs with selectable themes
+
+a really stupid animation?
+
+accessibility features
+
+move the error messages within the HTML document
+
+look into anime.js
+
+user-defined dice images
+
+make it mobile-optimized and responsive
+
+multiplayer support
+
+dice roll history analysis - average roll value, most common roll, distribution of roll values, etc.
+
+INTEGRATE WITH ROLL20
+
+make widgets or plugins that can be embedded into other websites or apps
+
+Localization and Internationalization
